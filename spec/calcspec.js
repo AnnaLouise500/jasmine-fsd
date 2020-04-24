@@ -11,6 +11,10 @@
                     it("should return 42", function() {
                         expect(addition(20, 22)) .toBe(42); //make sure addition is defined in calc.js
                     });
+                    //adding a second test to the calculator > addition suite
+                    it("should return 26", function() {
+                        expect(addition(7,19)) .toBe(26);
+                    })
                 });
             });
 
