@@ -14,7 +14,11 @@
                     //adding a second test to the calculator > addition suite
                     it("should return 26", function() {
                         expect(addition(7,19)) .toBe(26);
-                    })
+                    });
+                    //adding defensive programming test
+                    it("should return an error if we don't supply two numbers", function() {
+                        expect(addition("hitchikers", "guide")).toBe ("Error!");
+                    });
                 });
             });
 
