@@ -4,6 +4,7 @@ function addition(numOne, numTwo) {
         return numOne + numTwo;
     }
     else {
-        return "Error!";
+        alert("Error!"); //alert function to link to calc spec test
+        //doesnt make the alert box appear as you'd have to click ok to progress to next test
     }
-}
+} 

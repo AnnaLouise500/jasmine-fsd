@@ -17,7 +17,10 @@
                     });
                     //adding defensive programming test
                     it("should return an error if we don't supply two numbers", function() {
-                        expect(addition("hitchikers", "guide")).toBe ("Error!");
+                        //spy to check if alert function has been called containing "error"
+                        spyOn(window, "alert"); //alert belongs to window object hence window
+                        addition("Hitchikers", "Guide");
+                        expect(window.alert).toHaveBeenCalledWith("Error!");
                     });
                 });
             });
